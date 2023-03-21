@@ -1,0 +1,292 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@100;300;400;700;900&display=swap');
+
+:root{
+    --color-Dark-Blue:hsl(233, 26%, 24%);
+    --color-Lime-Green:hsl(136, 65%, 51%);
+    --color-Bright-Cyan:hsl(192, 70%, 51%);
+    --color-Grayish-Blue:hsl(233, 8%, 62%);
+    --color-ligth-Grayish-Blue:hsl(220, 16%, 96%);
+    --color-Very-Grayish-Blue:hsl(0, 0%, 98%);
+    --color-white:hsl(0, 0%, 100%);
+}
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+  width: 100%;
+  font-family: 'Lato', sans-serif;
+}
+
+/*FOR ALL LINKS a*/
+a{
+    text-decoration: none;
+    color: var(--color-Grayish-Blue);
+}
+.nav-bar{
+    background-color: white;
+    display: flex;
+    justify-content: space-around;
+    padding: 15px;
+    padding-bottom: 25px;
+}
+.nav-bar ul a{
+    position: relative;
+    margin-right: 30px;
+}
+.nav-bar ul  a:hover{
+    color: black;
+}
+
+/*LA LIGNE SOUS LES LIENS a */
+.nav-bar ul a:after{
+    content: "";
+    position: absolute;
+    left: 0;
+    width: 0;
+    height: 3px;
+    background: var(--color-Lime-Green);
+    transition: .3s;
+    top: 43px;
+}
+.nav-bar ul  a:hover:after{
+    width: 100%;
+}
+
+/*BOUTTON (Request Invite)*/
+.btn{
+    color:var(--color-white);
+    background: linear-gradient(120deg,var(--color-Lime-Green) 5%, var(--color-Bright-Cyan) 60%);
+    border: 2px solid linear-gradient(120deg,var(--color-Lime-Green) 5%, var(--color-Bright-Cyan) 60%);
+    border-radius: 100px;
+    padding: 10px 30px;
+    transition: all .4s ease-in-out;
+    background-size: 152% 100%;
+}
+.btn:hover{
+    opacity: 50%;
+}
+
+ /*--------------------SECOND PART----------------------- */
+
+.second-part{
+    display: flex;
+    background-color: var(--color-Very-Grayish-Blue);
+}
+
+    /* (sc1) est une classe pour les elements de "section-one"*/
+.second-part .section-one .sc1{
+    margin-left: 19%;
+}
+.second-part .section-one h1{
+    font-size: 55px;
+    font-weight:400;
+    margin-top: 17%;
+    margin-bottom:20px;
+    margin-right: 17%;
+}
+.second-part .section-one p{
+    color: var(--color-Grayish-Blue);    
+    font-size: 17px;
+    margin-right: 26%;
+    margin-bottom: 20px;
+    line-height: 1.5;
+}
+
+
+
+.second-part .section-two{
+    position: relative;
+    overflow: hidden;
+}
+#img1 {
+    height: 800px;
+    width: 950px;
+    position: relative;
+    top: -25%;
+    left: 7%;
+    z-index: 1;
+}
+#img2 {
+    position: absolute;
+    height: 750px;
+    width: 600px;
+    top: -12.5%;
+    left: 24%;
+    z-index: 1;
+
+}
+
+
+
+
+    /*-------------------THIRD PART---------------------- */
+
+.third-part{
+    background-color: var(--color-ligth-Grayish-Blue);
+    margin-top: -20%;
+} 
+.third-part .section-one .sc1{
+    margin-left: 10%;
+}
+.third-part .section-one h3{
+    font-size: 35px;
+    font-weight:400;
+    opacity: 80%;
+    margin-bottom:20px;
+    padding-top: 5%;
+}
+.third-part .section-one p{
+    color: var(--color-Grayish-Blue);    
+    font-size: 17px;
+    margin-right: 46%;
+    line-height: 1.5;
+}
+
+.third-part .section-two {
+    display:grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    margin-left: 9%;
+    margin-right: 8%;
+}
+.third-part .section-two .cl2{
+    padding: 70px 20px;
+}
+
+.third-part .section-two img {
+    height: 50px;
+    width: 50px;
+    margin-bottom: 25px;
+}
+
+.third-part .section-two .cl2 h3{
+    font-size: 22px;
+    font-weight:400;
+    opacity: 80%;
+    margin-bottom: 25px;
+}
+.third-part .section-two .cl2 p{
+    color: var(--color-Grayish-Blue);    
+    font-size: 17px;
+    line-height: 1.5;
+}
+
+
+  
+    /*------------------ FORTH PART-----------------*/
+.forth-part{
+    background-color: var(--color-Very-Grayish-Blue);
+}
+
+/*LE TITRE (Latest Articles)*/
+.forth-part .section-one h3{
+    font-size: 40px;
+    font-weight:400;
+    opacity: 80%;
+    margin-left: 9.5%;
+    margin-bottom:40px;
+    padding-top: 6%;
+}
+
+
+.forth-part .section-two {
+    display:flex;
+    margin-right: 10%;
+    margin-left:7% ;
+    
+
+}
+.forth-part .section-two img{
+    height: 170px;
+    width: 253px;
+    border-radius: 10px 10px 0px 0px;
+    margin-bottom: 30px;
+}
+
+.forth-part .section-two .cl2{
+    background-color: var(--color-white);
+    margin-left: 3%;
+    border-radius:10px;
+    
+}
+.forth-part .section-two .cl2 .description{
+    margin-left: 25px;
+    margin-bottom: 10px;
+}
+
+
+.forth-part .section-two .cl2 h6{
+    color: var(--color-Grayish-Blue);    
+    line-height: 1.1;
+}
+
+.forth-part .section-two .cl2 h3{
+    font-size: 18px;
+    cursor: pointer;
+}
+.forth-part .section-two .cl2 h3:hover{
+    color: var(--color-Lime-Green);
+}
+
+.forth-part .section-two .cl2 p{
+    color: var(--color-Grayish-Blue); 
+    font-size: 15.5px;   
+    line-height: 1.1;
+}
+
+
+    /*-----------------FIFTH PART-----------------*/
+
+
+.fifth-part{
+    background-color: var(--color-Dark-Blue);
+    display: flex;
+    justify-content: space-between;
+    margin-top: 5%;
+}
+
+.fifth-part .part-one,.part-two,.part-three{
+    margin-top: 3%;
+}
+.fifth-part .part-one{
+    margin-left: 10%;
+}
+.fifth-part .part-one .img-logo {
+    margin-bottom: 50px;
+    background-color: white;
+}
+/*contact-us c'est la classe qui appartient (LES réseaux sociaux)*/
+.fifth-part .part-one .contact-us{
+    display: flex;
+    width: 155px;
+    justify-content: space-between;
+    margin-bottom: 30px;
+}
+.fifth-part .part-one .contact-us .contact:hover{
+    cursor: pointer;
+    color: var(--color-Lime-Green);
+    /*la couleur ne  change pas (je sais pas c quoi le probleme)*/
+}
+
+
+.fifth-part .part-two{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    height: 100px;
+    margin-left: -13%;
+}
+
+.fifth-part .part-two a{
+    margin-right: 50px;
+}
+.fifth-part .part-two a:hover{
+    cursor: pointer;
+    color: var(--color-Lime-Green);
+}
+
+.fifth-part .part-three p{
+    color: var(--color-Grayish-Blue); 
+    margin-top: 14%;
+    margin-left: -25%;
+}
